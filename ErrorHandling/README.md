@@ -22,7 +22,8 @@ Inside this method, the variable flag will be compared with each error variable,
 
 Taking Module 2, FaceAlignment, as an example:
 
-*//MODULE 2, FACE ALIGNMENT
+```
+//MODULE 2, FACE ALIGNMENT
 #define ERROR_1_MODULE_2 1
 #define ERROR_2_MODULE_2 2
 #define ERROR_3_MODULE_2 4
@@ -42,13 +43,15 @@ Taking Module 2, FaceAlignment, as an example:
 #define ERROR_17_MODULE_2 65536
 #define ERROR_18_MODULE_2 131072
 #define ERROR_19_MODULE_2 262144
-#define ERROR_20_MODULE_2 524288*
+#define ERROR_20_MODULE_2 524288
+```
 
 ### Errors comparison in function ErrorHandling
 
 Again, taking Module 2, FaceAlignment, as an example:
 
-*//MODULE 2, FACE ALIGNMENT
+```
+//MODULE 2, FACE ALIGNMENT
 void ErrorHandling(long long flag)
 if (flag & ERROR_1_MODULE_2) {		
 	print("Module 2 Error... (Error name)");
@@ -59,4 +62,5 @@ if (flag & ERROR_2_MODULE_2) {
 if (flag & ERROR_3_MODULE_2) {
 	print("Module 2 Error... (Error name)");
 }
-And so on...*
+And so on...
+```
