@@ -157,7 +157,7 @@ Utilizamos los frameworks de Azure Cognitive Services para el reconocimiento fac
 
 Nosotros tenemos cuatro endpoints que se conectan con la nube:
 
-* Azure Cognitive Services (Reconocimiento Facial)
+* Azure Cognitive Services (Reconocimiento Facial):
 	* **Descripción**:
 		* Se envía una solicitud con una imagen para recibir los datos característicos de la misma, como edad, tamaño de la cara, género y el formato.
 	* **URL**:
@@ -179,7 +179,7 @@ Nosotros tenemos cuatro endpoints que se conectan con la nube:
 			 'metadata': {'format': *'format'*, 'height': *'height'*, 'width': *'width'*},
 			 'requestId': *'requestId'*}
 
-* Google Cloud Services #1 (Usuarios)
+* Google Cloud Services #1 (Usuarios):
 	* **Descripción**:
 		* Se toman los datos importantes regresados por Azure para nuestro registro y se envían a Google Cloud, junto con la fecha y hora.
 	* **URL**:
@@ -189,17 +189,17 @@ Nosotros tenemos cuatro endpoints que se conectan con la nube:
 	* **Formato JSON de la respuesta**:
 		*
 
-* Google Cloud Services #2 (Estatus Refrigerador)
+* Google Cloud Services #2 (Estatus Refrigerador):
 	* **Descripción**:
 		* Se envían a Google Cloud los datos recibidos del sensor de temperatura, siendo la temperatura y la humedad, junto con la fecha y hora.
 	* **URL**:
-		*
+		* 
 	* **Formato JSON del cuerpo de la solicitud**:
 		* '{{ "ts": {}, "temperature": {}, "humidity": "{}" }}';.format(int(time.time()), temper\_list[0],temper\_list[1])
 	* **Formato JSON de la respuesta**:
 		* 
 
-* Google Cloud Services #3 (Estatus Almacén)
+* Google Cloud Services #3 (Estatus Almacén):
 	* **Descripción**:
 		* Se envían a Google Cloud los datos del inventario en ese momento, siendo el ID de producto, el nombre del producto y la cantidad en existencia.
 	* **URL**:
@@ -214,7 +214,6 @@ Nosotros tenemos cuatro endpoints que se conectan con la nube:
 Todos los sensores menos uno fueron consolidados en un solo programa de Python, e implementados de una manera selectivamente asíncrona. Lo que esto significa es que, en un caso de uso normal, al inicio solamente se tienen dos sensores funcionando: el detector magnético de apertura y el de temperatura. Esto prosigue hasta que se detecte una apertura de puerta: a partir de este momento, se toma una foto usando la webcam, y se empieza a detectar (asíncronamente) si la persona que abrió la puerta dejó o ingresó un producto, y también si la puerta se ha dejado abierta después que el usuario se ha ido.
 
 Los sensores utilizados ( y la liga de donde obtuvimos su información) fueron los siguientes:
-
 	* **Temperatura/Humedad:** [https://github.com/adafruit/Adafruit\_Python\_DHT](https://github.com/adafruit/Adafruit_Python_DHT)
 	* **Movimiento:** [https://www.internetdelascosas.cl/2013/05/13/sensor-de-presencia-en-raspberry-pi/](https://www.internetdelascosas.cl/2013/05/13/sensor-de-presencia-en-raspberry-pi/)
 	* **Apertura Magnética:** [https://www.alexisabarca.com/2016/01/usar-un-sensor-de-puerta-magnetico-en-un-raspberry-pi/](https://www.alexisabarca.com/2016/01/usar-un-sensor-de-puerta-magnetico-en-un-raspberry-pi/)
@@ -233,7 +232,6 @@ Para los sensores no utilizamos ningún framework para su funcionamiento óptimo
 #### 3.5.3 Librerías de funciones o dependencias
 
 Para el funcionamiento de los sensores se usaron tres librerías importantes:
-
 	* RPi.GPIO, la cual es la librería para la utilización de los pines en la Rpi
 	* mfrc522, la cual es la librería/API para la escritura y lectura de chips RFID a partir de un sensor conectado por pines
 	* Adafruit, la cual es una librería general de I/O, que en este proyecto fue utilizada para el input del sensor de temperatura y humedad
@@ -243,7 +241,6 @@ Para el funcionamiento de los sensores se usaron tres librerías importantes:
 *[Incluya aquí una guía paso a paso para poder utilizar el proyecto, desde la clonación de este repositorio hasta el despliegue de la solución en una Raspberry Pi y en una plataforma en la nube.]*
 
 ## 4. Referencias
-
 * Librería de Python
 	* [https://docs.python.org/3/](https://docs.python.org/3/)
 * Librería de RPi.GPIO
