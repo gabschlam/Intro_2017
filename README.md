@@ -157,7 +157,7 @@ Utilizamos los frameworks de Azure Cognitive Services para el reconocimiento fac
 
 Nosotros tenemos cuatro endpoints que se conectan con la nube:
 
-* Azure Cognitive Services (Reconocimiento Facial):
+* **Azure Cognitive Services (Reconocimiento Facial):**
 	* **Descripción**:
 		* Se envía una solicitud con una imagen para recibir los datos característicos de la misma, como edad, tamaño de la cara, género y el formato.
 	* **URL**:
@@ -179,7 +179,7 @@ Nosotros tenemos cuatro endpoints que se conectan con la nube:
 			 'metadata': {'format': *'format'*, 'height': *'height'*, 'width': *'width'*},
 			 'requestId': *'requestId'*}
 
-* Google Cloud Services #1 (Usuarios):
+* **Google Cloud Services #1 (Usuarios):**
 	* **Descripción**:
 		* Se toman los datos importantes regresados por Azure para nuestro registro y se envían a Google Cloud, junto con la fecha y hora.
 	* **URL**:
@@ -189,7 +189,7 @@ Nosotros tenemos cuatro endpoints que se conectan con la nube:
 	* **Formato JSON de la respuesta**:
 		*
 
-* Google Cloud Services #2 (Estatus Refrigerador):
+* **Google Cloud Services #2 (Estatus Refrigerador):**
 	* **Descripción**:
 		* Se envían a Google Cloud los datos recibidos del sensor de temperatura, siendo la temperatura y la humedad, junto con la fecha y hora.
 	* **URL**:
@@ -199,7 +199,7 @@ Nosotros tenemos cuatro endpoints que se conectan con la nube:
 	* **Formato JSON de la respuesta**:
 		* 
 
-* Google Cloud Services #3 (Estatus Almacén):
+* **Google Cloud Services #3 (Estatus Almacén):**
 	* **Descripción**:
 		* Se envían a Google Cloud los datos del inventario en ese momento, siendo el ID de producto, el nombre del producto y la cantidad en existencia.
 	* **URL**:
