@@ -171,11 +171,11 @@ Nosotros tenemos cuatro endpoints que se conectan con la nube:
 			* data = imagen tomada
 	* **Formato JSON de la respuesta**:
 			{'faces': [{'age': *age*,
-			 'faceRectangle': {'height': *height*,
-			 'left': *left*,
-			 'top': *top*,
-			 'width': *width*},
-			 'gender': *'gender'*}],
+			 						'faceRectangle': {'height': *height*,
+			 															'left': *left*,
+			 															'top': *top*,
+			 															'width': *width*},
+									'gender': *'gender'*}],
 			 'metadata': {'format': *'format'*, 'height': *'height'*, 'width': *'width'*},
 			 'requestId': *'requestId'*}
 
