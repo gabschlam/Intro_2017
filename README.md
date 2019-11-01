@@ -39,13 +39,13 @@ Para la visualización de los datos se debe utilizar un servicio como[Azure Powe
 El proyecto debe seguir la siguiente estructura de carpetas, la cual generamos por usted:
 ```
 - /                     # Raíz de todo el proyecto
-     - README.md               # Archivo con los datos del proyecto (este archivo)
-     - frontend          # Carpeta con la solución del frontend (Web app, dashboards, etc.)
-     - backend           # Carpeta con la solución del backend (CMS, API, Funciones, etc.)
-     - sensors           # Carpeta con los códigos que se ejecutan en el RPi
-     - datasets          # Carpeta con los datasets y recursos utilizados (csv, json, audio, videos, entre otros)
-     - dbs               # Carpeta con los modelos, catálogos y scripts necesarios para generar las bases de datos
-     - docs              # Carpeta con la documentación del proyecto
+		 - README.md               # Archivo con los datos del proyecto (este archivo)
+		 - frontend          # Carpeta con la solución del frontend (Web app, dashboards, etc.)
+		 - backend           # Carpeta con la solución del backend (CMS, API, Funciones, etc.)
+		 - sensors           # Carpeta con los códigos que se ejecutan en el RPi
+		 - datasets          # Carpeta con los datasets y recursos utilizados (csv, json, audio, videos, entre otros)
+		 - dbs               # Carpeta con los modelos, catálogos y scripts necesarios para generar las bases de datos
+		 - docs              # Carpeta con la documentación del proyecto
 ```
 
 ### 1.3 Documentación del reto
@@ -91,25 +91,25 @@ Utilizamos los frameworks de MQTT con Google Cloud Services (principalmente Data
 #### 3.3.3 Librerías de funciones o dependencias
 
 * Se usaron las siguientes librerías
-  * RPi.GPIO:
-    * Librería que se utiliza para controlar el GPIO en una Raspberry Pi, además de asignar los pines utilizados en el circuito.
-  * sys
-  * json
-  * time
-  * subprocess
-  * datetime
-  * requests
-  * jwt
-    * Librería que permite la comunicación del Raspberry Pi con un servicio que mande/reciba información dentro de un documento de tipo _json_. jwt significa _json web token_.
-  * Adafruit\_DHT
-    * Librería utilizada para poder manejar la información enviada desde el sensor de temperatura y humedad con el nombre _DHT11_ y poder manipularlo a nuestro gusto.
-  * paho.mqtt.client
-    * Librería utilizada para poder mandar mensajes utilizando el protocolo **MQTT** , este es un protocolo utilizado especialmente para poder conectar dispositivos que pertenezcan a una red de IoT (Internet of Things)
-  * pprint
-    * Librería enfocada en poder imprimir de manera correcta y eficiente la información que requerimos para poder mandarla a nuestro servicio de _Google Cloud_.
-  * mfrc522
-    * Librería utilizada para poder manejar los datos de cualquier tag RFID, esta librería está enfocada para que el sensor _RFID-RC522_ pueda funcionar con el Raspberry Pi 3 B+.
-  * requests.exceptions
+	* RPi.GPIO:
+		* Librería que se utiliza para controlar el GPIO en una Raspberry Pi, además de asignar los pines utilizados en el circuito.
+	* sys
+	* json
+	* time
+	* subprocess
+	* datetime
+	* requests
+	* jwt
+		* Librería que permite la comunicación del Raspberry Pi con un servicio que mande/reciba información dentro de un documento de tipo _json_. jwt significa _json web token_.
+	* Adafruit\_DHT
+		* Librería utilizada para poder manejar la información enviada desde el sensor de temperatura y humedad con el nombre _DHT11_ y poder manipularlo a nuestro gusto.
+	* paho.mqtt.client
+		* Librería utilizada para poder mandar mensajes utilizando el protocolo **MQTT** , este es un protocolo utilizado especialmente para poder conectar dispositivos que pertenezcan a una red de IoT (Internet of Things)
+	* pprint
+		* Librería enfocada en poder imprimir de manera correcta y eficiente la información que requerimos para poder mandarla a nuestro servicio de _Google Cloud_.
+	* mfrc522
+		* Librería utilizada para poder manejar los datos de cualquier tag RFID, esta librería está enfocada para que el sensor _RFID-RC522_ pueda funcionar con el Raspberry Pi 3 B+.
+	* requests.exceptions
 
 ### 3.4 Backend
 
@@ -135,80 +135,80 @@ Utilizamos los frameworks de Azure Cognitive Services para el reconocimiento fac
 #### 3.4.3 Librerías de funciones o dependencias
 
 * Se usaron las siguientes librerías
-  * RPi.GPIO:
-    * Librería que se utiliza para controlar el GPIO en una Raspberry Pi, además de asignar los pines utilizados en el circuito.
-  * sys
-  * json
-  * time
-  * subprocess
-  * datetime
-  * requests
-  * jwt
-    * Librería que permite la comunicación del Raspberry Pi con un servicio que mande/reciba información dentro de un documento de tipo _json_. jwt significa _json web token_.
-  * Adafruit\_DHT
-    * Librería utilizada para poder manejar la información enviada desde el sensor de temperatura y humedad con el nombre _DHT11_ y poder manipularlo a nuestro gusto.
-  * paho.mqtt.client
-    * Librería utilizada para poder mandar mensajes utilizando el protocolo **MQTT** , este es un protocolo utilizado especialmente para poder conectar dispositivos que pertenezcan a una red de IoT (Internet of Things)
-  * pprint
-    * Librería enfocada en poder imprimir de manera correcta y eficiente la información que requerimos para poder mandarla a nuestro servicio de _Google Cloud_.
-  * mfrc522
-    * Librería utilizada para poder manejar los datos de cualquier tag RFID, esta librería está enfocada para que el sensor _RFID-RC522_ pueda funcionar con el Raspberry Pi 3 B+.
-  * requests.exceptions
+	* RPi.GPIO:
+		* Librería que se utiliza para controlar el GPIO en una Raspberry Pi, además de asignar los pines utilizados en el circuito.
+	* sys
+	* json
+	* time
+	* subprocess
+	* datetime
+	* requests
+	* jwt
+		* Librería que permite la comunicación del Raspberry Pi con un servicio que mande/reciba información dentro de un documento de tipo _json_. jwt significa _json web token_.
+	* Adafruit\_DHT
+		* Librería utilizada para poder manejar la información enviada desde el sensor de temperatura y humedad con el nombre _DHT11_ y poder manipularlo a nuestro gusto.
+	* paho.mqtt.client
+		* Librería utilizada para poder mandar mensajes utilizando el protocolo **MQTT** , este es un protocolo utilizado especialmente para poder conectar dispositivos que pertenezcan a una red de IoT (Internet of Things)
+	* pprint
+		* Librería enfocada en poder imprimir de manera correcta y eficiente la información que requerimos para poder mandarla a nuestro servicio de _Google Cloud_.
+	* mfrc522
+		* Librería utilizada para poder manejar los datos de cualquier tag RFID, esta librería está enfocada para que el sensor _RFID-RC522_ pueda funcionar con el Raspberry Pi 3 B+.
+	* requests.exceptions
 
 Nosotros tenemos cuatro endpoints que se conectan con la nube:
 
 * Azure Cognitive Services (Reconocimiento Facial)
-  * **Descripción**:
-    * Se envía una solicitud con una imagen para recibir los datos característicos de la misma, como edad, tamaño de la cara, género y el formato.
-  * **URL**:
-    * 
-  * **Headers**:
-    * {&quot;Content-Type&quot;: &quot;application/octet-stream&quot;, &#39;Ocp-Apim-Subscription-Key&#39;: &#39;7e9cfbb244204fb994babd6111235269&#39;}
-  * **Formato JSON del cuerpo de la solicitud**:
-    * face\_uri, headers, data
-    * Donde:
-      * face\_uri = &quot;https://raspberrycp.cognitiveservices.azure.com/vision/v1.0/analyze?visualFeatures=Faces&amp;language=en&quot;
-      * data = imagen tomada
-  * **Formato JSON de la respuesta**:
+	* **Descripción**:
+		* Se envía una solicitud con una imagen para recibir los datos característicos de la misma, como edad, tamaño de la cara, género y el formato.
+	* **URL**:
+		* 
+	* **Headers**:
+		* {&quot;Content-Type&quot;: &quot;application/octet-stream&quot;, &#39;Ocp-Apim-Subscription-Key&#39;: &#39;7e9cfbb244204fb994babd6111235269&#39;}
+	* **Formato JSON del cuerpo de la solicitud**:
+		* face\_uri, headers, data
+		* Donde:
+			* face\_uri = &quot;https://raspberrycp.cognitiveservices.azure.com/vision/v1.0/analyze?visualFeatures=Faces&amp;language=en&quot;
+			* data = imagen tomada
+	* **Formato JSON de la respuesta**:
 
-      {'faces': [{'age': *age*,
-       'faceRectangle': {'height': *height*,
-                         'left': *left*,
-                         'top': *top*,
-                         'width': *width*,
-                  'gender': *'gender'*}],
-       'metadata': {'format': *'format'*, 'height': *'height'*, 'width': *'width'*},
-       'requestId': *'requestId'*}
+			{'faces': [{'age': *age*,
+			 'faceRectangle': {'height': *height*,
+												 'left': *left*,
+												 'top': *top*,
+												 'width': *width*,
+									'gender': *'gender'*}],
+			 'metadata': {'format': *'format'*, 'height': *'height'*, 'width': *'width'*},
+			 'requestId': *'requestId'*}
 
 * Google Cloud Services #1 (Usuarios)
-  * **Descripción**:
-    * Se toman los datos importantes regresados por Azure para nuestro registro y se envían a Google Cloud, junto con la fecha y hora.
-  * **URL**:
-    * 
-  * **Formato JSON del cuerpo de la solicitud**:
-    * '{{ "ts": {}, "age": {}, "gender": "{}" }}';.format(int(time.time()), faces\_list[0],faces\_list[1])
-  * **Formato JSON de la respuesta**:
-    *
+	* **Descripción**:
+		* Se toman los datos importantes regresados por Azure para nuestro registro y se envían a Google Cloud, junto con la fecha y hora.
+	* **URL**:
+		* 
+	* **Formato JSON del cuerpo de la solicitud**:
+		* '{{ "ts": {}, "age": {}, "gender": "{}" }}';.format(int(time.time()), faces\_list[0],faces\_list[1])
+	* **Formato JSON de la respuesta**:
+		*
 
 * Google Cloud Services #2 (Estatus Refrigerador)
-  * **Descripción**:
-    * Se envían a Google Cloud los datos recibidos del sensor de temperatura, siendo la temperatura y la humedad, junto con la fecha y hora.
-  * **URL**:
-    *
-  * **Formato JSON del cuerpo de la solicitud**:
-    * '{{ "ts": {}, "temperature": {}, "humidity": "{}" }}';.format(int(time.time()), temper\_list[0],temper\_list[1])
-  * **Formato JSON de la respuesta**:
-    * 
+	* **Descripción**:
+		* Se envían a Google Cloud los datos recibidos del sensor de temperatura, siendo la temperatura y la humedad, junto con la fecha y hora.
+	* **URL**:
+		*
+	* **Formato JSON del cuerpo de la solicitud**:
+		* '{{ "ts": {}, "temperature": {}, "humidity": "{}" }}';.format(int(time.time()), temper\_list[0],temper\_list[1])
+	* **Formato JSON de la respuesta**:
+		* 
 
 * Google Cloud Services #3 (Estatus Almacén)
-  * **Descripción**:
-    * Se envían a Google Cloud los datos del inventario en ese momento, siendo el ID de producto, el nombre del producto y la cantidad en existencia.
-  * **URL**:
-    *
-  * **Formato JSON del cuerpo de la solicitud**:
-    *
-  * **Formato JSON de la respuesta**:
-    * 
+	* **Descripción**:
+		* Se envían a Google Cloud los datos del inventario en ese momento, siendo el ID de producto, el nombre del producto y la cantidad en existencia.
+	* **URL**:
+		*
+	* **Formato JSON del cuerpo de la solicitud**:
+		*
+	* **Formato JSON de la respuesta**:
+		* 
 
 ### 3.5 Sensores
 
@@ -216,11 +216,11 @@ Todos los sensores menos uno fueron consolidados en un solo programa de Python, 
 
 Los sensores utilizados ( y la liga de donde obtuvimos su información) fueron los siguientes:
 
-  * **Temperatura/Humedad:** [https://github.com/adafruit/Adafruit\_Python\_DHT](https://github.com/adafruit/Adafruit_Python_DHT)
-  * **Movimiento:** [https://www.internetdelascosas.cl/2013/05/13/sensor-de-presencia-en-raspberry-pi/](https://www.internetdelascosas.cl/2013/05/13/sensor-de-presencia-en-raspberry-pi/)
-  * **Apertura Magnética:** [https://www.alexisabarca.com/2016/01/usar-un-sensor-de-puerta-magnetico-en-un-raspberry-pi/](https://www.alexisabarca.com/2016/01/usar-un-sensor-de-puerta-magnetico-en-un-raspberry-pi/)
-  * **Webcam:** [https://github.com/vcubells/iot\_supermercado/blob/master/demo\_02/01\_Sensors.py](https://github.com/vcubells/iot_supermercado/blob/master/demo_02/01_Sensors.py)
-  * **Lectoescritor de RFID:** [https://medium.com/coinmonks/for-beginners-how-to-set-up-a-raspberry-pi-rfid-rc522-reader-and-record-data-on-iota-865f67843a2d](https://medium.com/coinmonks/for-beginners-how-to-set-up-a-raspberry-pi-rfid-rc522-reader-and-record-data-on-iota-865f67843a2d)
+	* **Temperatura/Humedad:** [https://github.com/adafruit/Adafruit\_Python\_DHT](https://github.com/adafruit/Adafruit_Python_DHT)
+	* **Movimiento:** [https://www.internetdelascosas.cl/2013/05/13/sensor-de-presencia-en-raspberry-pi/](https://www.internetdelascosas.cl/2013/05/13/sensor-de-presencia-en-raspberry-pi/)
+	* **Apertura Magnética:** [https://www.alexisabarca.com/2016/01/usar-un-sensor-de-puerta-magnetico-en-un-raspberry-pi/](https://www.alexisabarca.com/2016/01/usar-un-sensor-de-puerta-magnetico-en-un-raspberry-pi/)
+	* **Webcam:** [https://github.com/vcubells/iot\_supermercado/blob/master/demo\_02/01\_Sensors.py](https://github.com/vcubells/iot_supermercado/blob/master/demo_02/01_Sensors.py)
+	* **Lectoescritor de RFID:** [https://medium.com/coinmonks/for-beginners-how-to-set-up-a-raspberry-pi-rfid-rc522-reader-and-record-data-on-iota-865f67843a2d](https://medium.com/coinmonks/for-beginners-how-to-set-up-a-raspberry-pi-rfid-rc522-reader-and-record-data-on-iota-865f67843a2d)
 
 #### 3.5.1 Lenguaje de programación**
 
@@ -235,9 +235,9 @@ Para los sensores no utilizamos ningún framework para su funcionamiento óptimo
 
 Para el funcionamiento de los sensores se usaron tres librerías importantes:
 
-  * RPi.GPIO, la cual es la librería para la utilización de los pines en la Rpi
-  * mfrc522, la cual es la librería/API para la escritura y lectura de chips RFID a partir de un sensor conectado por pines
-  * Adafruit, la cual es una librería general de I/O, que en este proyecto fue utilizada para el input del sensor de temperatura y humedad
+	* RPi.GPIO, la cual es la librería para la utilización de los pines en la Rpi
+	* mfrc522, la cual es la librería/API para la escritura y lectura de chips RFID a partir de un sensor conectado por pines
+	* Adafruit, la cual es una librería general de I/O, que en este proyecto fue utilizada para el input del sensor de temperatura y humedad
 
 ### 3.6 Pasos a seguir para utilizar el proyecto
 
@@ -246,18 +246,18 @@ Para el funcionamiento de los sensores se usaron tres librerías importantes:
 ## 4. Referencias
 
 * Librería de Python
-  * [https://docs.python.org/3/](https://docs.python.org/3/)
+	* [https://docs.python.org/3/](https://docs.python.org/3/)
 * Librería de RPi.GPIO
-  * [https://pypi.org/project/RPi.GPIO/](https://pypi.org/project/RPi.GPIO/)
+	* [https://pypi.org/project/RPi.GPIO/](https://pypi.org/project/RPi.GPIO/)
 * Librería de jwt (_Jason Web Token_)
-  * [https://pypi.org/project/jwt/](https://pypi.org/project/jwt/)
+	* [https://pypi.org/project/jwt/](https://pypi.org/project/jwt/)
 * Librería de Adafruit\_DHT
-  * [https://circuitpython.readthedocs.io/projects/dht/en/latest/](https://circuitpython.readthedocs.io/projects/dht/en/latest/)
+	* [https://circuitpython.readthedocs.io/projects/dht/en/latest/](https://circuitpython.readthedocs.io/projects/dht/en/latest/)
 * Librería de _paho.mqtt.client_
-  * [https://pypi.org/project/paho-mqtt/](https://pypi.org/project/paho-mqtt/)
+	* [https://pypi.org/project/paho-mqtt/](https://pypi.org/project/paho-mqtt/)
 * Librería de _pprint_ (_pretty print_)
-  * [https://docs.python.org/3/library/pprint.html](https://docs.python.org/3/library/pprint.html)
+	* [https://docs.python.org/3/library/pprint.html](https://docs.python.org/3/library/pprint.html)
 * Librería de MFRC522
-  * [https://www.nxp.com/docs/en/data-sheet/MFRC522.pdf](https://www.nxp.com/docs/en/data-sheet/MFRC522.pdf)
+	* [https://www.nxp.com/docs/en/data-sheet/MFRC522.pdf](https://www.nxp.com/docs/en/data-sheet/MFRC522.pdf)
 * Documentación de _Microsoft Azure Cognitive Services_
-  * [https://docs.microsoft.com/en-us/azure/cognitive-services/](https://docs.microsoft.com/en-us/azure/cognitive-services/)
+	* [https://docs.microsoft.com/en-us/azure/cognitive-services/](https://docs.microsoft.com/en-us/azure/cognitive-services/)
