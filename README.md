@@ -175,7 +175,7 @@ Nosotros tenemos cuatro endpoints que se conectan con la nube:
 			 'faceRectangle': {'height': *height*,
 												 'left': *left*,
 												 'top': *top*,
-												 'width': *width*,
+												 'width': *width*},
 									'gender': *'gender'*}],
 			 'metadata': {'format': *'format'*, 'height': *'height'*, 'width': *'width'*},
 			 'requestId': *'requestId'*}
