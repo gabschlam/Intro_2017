@@ -39,13 +39,13 @@ Para la visualización de los datos se debe utilizar un servicio como[Azure Powe
 El proyecto debe seguir la siguiente estructura de carpetas, la cual generamos por usted:
 ```
 - /                     # Raíz de todo el proyecto
-		 - README.md               # Archivo con los datos del proyecto (este archivo)
-		 - frontend          # Carpeta con la solución del frontend (Web app, dashboards, etc.)
-		 - backend           # Carpeta con la solución del backend (CMS, API, Funciones, etc.)
-		 - sensors           # Carpeta con los códigos que se ejecutan en el RPi
-		 - datasets          # Carpeta con los datasets y recursos utilizados (csv, json, audio, videos, entre otros)
-		 - dbs               # Carpeta con los modelos, catálogos y scripts necesarios para generar las bases de datos
-		 - docs              # Carpeta con la documentación del proyecto
+	- README.md         # Archivo con los datos del proyecto (este archivo)
+	- frontend          # Carpeta con la solución del frontend (Web app, dashboards, etc.)
+	- backend           # Carpeta con la solución del backend (CMS, API, Funciones, etc.)
+	- sensors           # Carpeta con los códigos que se ejecutan en el RPi
+	- datasets          # Carpeta con los datasets y recursos utilizados (csv, json, audio, videos, entre otros)
+	- dbs               # Carpeta con los modelos, catálogos y scripts necesarios para generar las bases de datos
+	- docs              # Carpeta con la documentación del proyecto
 ```
 
 ### 1.3 Documentación del reto
@@ -171,10 +171,10 @@ Nosotros tenemos cuatro endpoints que se conectan con la nube:
 			* data = imagen tomada
 	* **Formato JSON de la respuesta**:
 		*	{'faces': [{'age': *age*,
-			 						'faceRectangle': {'height': *height*,
-			 															'left': *left*,
-			 															'top': *top*,
-			 															'width': *width*},
+									'faceRectangle': {'height': *height*,
+																		'left': *left*,
+																		'top': *top*,
+																		'width': *width*},
 									'gender': *'gender'*}],
 			 'metadata': {'format': *'format'*, 'height': *'height'*, 'width': *'width'*},
 			 'requestId': *'requestId'*}
@@ -214,11 +214,11 @@ Nosotros tenemos cuatro endpoints que se conectan con la nube:
 Todos los sensores menos uno fueron consolidados en un solo programa de Python, e implementados de una manera selectivamente asíncrona. Lo que esto significa es que, en un caso de uso normal, al inicio solamente se tienen dos sensores funcionando: el detector magnético de apertura y el de temperatura. Esto prosigue hasta que se detecte una apertura de puerta: a partir de este momento, se toma una foto usando la webcam, y se empieza a detectar (asíncronamente) si la persona que abrió la puerta dejó o ingresó un producto, y también si la puerta se ha dejado abierta después que el usuario se ha ido.
 
 Los sensores utilizados ( y la liga de donde obtuvimos su información) fueron los siguientes:
-	* **Temperatura/Humedad:** [https://github.com/adafruit/Adafruit\_Python\_DHT](https://github.com/adafruit/Adafruit_Python_DHT)
-	* **Movimiento:** [https://www.internetdelascosas.cl/2013/05/13/sensor-de-presencia-en-raspberry-pi/](https://www.internetdelascosas.cl/2013/05/13/sensor-de-presencia-en-raspberry-pi/)
-	* **Apertura Magnética:** [https://www.alexisabarca.com/2016/01/usar-un-sensor-de-puerta-magnetico-en-un-raspberry-pi/](https://www.alexisabarca.com/2016/01/usar-un-sensor-de-puerta-magnetico-en-un-raspberry-pi/)
-	* **Webcam:** [https://github.com/vcubells/iot\_supermercado/blob/master/demo\_02/01\_Sensors.py](https://github.com/vcubells/iot_supermercado/blob/master/demo_02/01_Sensors.py)
-	* **Lectoescritor de RFID:** [https://medium.com/coinmonks/for-beginners-how-to-set-up-a-raspberry-pi-rfid-rc522-reader-and-record-data-on-iota-865f67843a2d](https://medium.com/coinmonks/for-beginners-how-to-set-up-a-raspberry-pi-rfid-rc522-reader-and-record-data-on-iota-865f67843a2d)
+* **Temperatura/Humedad:** [https://github.com/adafruit/Adafruit\_Python\_DHT](https://github.com/adafruit/Adafruit_Python_DHT)
+* **Movimiento:** [https://www.internetdelascosas.cl/2013/05/13/sensor-de-presencia-en-raspberry-pi/](https://www.internetdelascosas.cl/2013/05/13/sensor-de-presencia-en-raspberry-pi/)
+* **Apertura Magnética:** [https://www.alexisabarca.com/2016/01/usar-un-sensor-de-puerta-magnetico-en-un-raspberry-pi/](https://www.alexisabarca.com/2016/01/usar-un-sensor-de-puerta-magnetico-en-un-raspberry-pi/)
+* **Webcam:** [https://github.com/vcubells/iot\_supermercado/blob/master/demo\_02/01\_Sensors.py](https://github.com/vcubells/iot_supermercado/blob/master/demo_02/01_Sensors.py)
+* **Lectoescritor de RFID:** [https://medium.com/coinmonks/for-beginners-how-to-set-up-a-raspberry-pi-rfid-rc522-reader-and-record-data-on-iota-865f67843a2d](https://medium.com/coinmonks/for-beginners-how-to-set-up-a-raspberry-pi-rfid-rc522-reader-and-record-data-on-iota-865f67843a2d)
 
 #### 3.5.1 Lenguaje de programación**
 
