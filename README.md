@@ -170,7 +170,8 @@ Nosotros tenemos cuatro endpoints que se conectan con la nube:
 			* face\_uri = &quot;https://raspberrycp.cognitiveservices.azure.com/vision/v1.0/analyze?visualFeatures=Faces&amp;language=en&quot;
 			* data = imagen tomada
 	* **Formato JSON de la respuesta**:
-		*	{'faces': [{'age': *age*,
+		*	```
+			{'faces': [{'age': *age*,
 			 						'faceRectangle': {'height': *height*,
 			 															'left': *left*,
 			 															'top': *top*,
@@ -178,7 +179,7 @@ Nosotros tenemos cuatro endpoints que se conectan con la nube:
 									'gender': *'gender'*}],
 			 'metadata': {'format': *'format'*, 'height': *'height'*, 'width': *'width'*},
 			 'requestId': *'requestId'*}
-
+			 ```
 * Google Cloud Services #1 (Usuarios)
 	* **Descripción**:
 		* Se toman los datos importantes regresados por Azure para nuestro registro y se envían a Google Cloud, junto con la fecha y hora.
